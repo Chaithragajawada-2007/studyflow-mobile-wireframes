@@ -1,0 +1,253 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+    color: #333333;
+    padding: 25px 15px;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.project-header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.project-header p {
+    color: #777777;
+    font-size: 13px;
+}
+
+.app-container {
+    max-width: 430px;
+    margin: auto;
+}
+
+.screen-nav {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.nav-btn {
+    flex: 1;
+    padding: 11px 5px;
+    border: 1px solid #aaaaaa;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.nav-btn.active {
+    background: #333333;
+    color: #ffffff;
+}
+
+.phone {
+    width: 100%;
+    min-height: 680px;
+    background: #ffffff;
+    border: 3px solid #333333;
+    border-radius: 28px;
+    padding: 18px;
+    position: relative;
+    box-shadow: 0 5px 15px #00000015;
+}
+
+.phone-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.screen h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.screen h3 {
+    font-size: 15px;
+    margin: 22px 0 12px;
+}
+
+.screen p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.muted {
+    color: #888888;
+    font-size: 12px !important;
+}
+
+.logo-placeholder {
+    width: 75px;
+    height: 75px;
+    border: 2px dashed #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px auto 25px;
+    font-size: 12px;
+}
+
+.screen label {
+    display: block;
+    font-size: 13px;
+    margin: 17px 0 7px;
+}
+
+.screen input[type="email"],
+.screen input[type="password"],
+.screen input[type="text"] {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    font-size: 13px;
+    background: #fafafa;
+}
+
+.primary-btn,
+.secondary-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+.primary-btn {
+    background: #444444;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.secondary-btn {
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #777777;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.wire-box {
+    border: 1px solid #aaaaaa;
+    padding: 15px;
+    margin: 18px 0;
+    border-radius: 5px;
+}
+
+.wire-box h3 {
+    margin-top: 0;
+}
+
+.progress-track {
+    height: 10px;
+    background: #dddddd;
+    margin: 12px 0;
+    border: 1px solid #aaaaaa;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 60%;
+    background: #777777;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px 10px;
+    border: 1px solid #cccccc;
+    margin: 8px 0;
+    font-size: 12px;
+}
+
+.list-item span:last-child {
+    color: #777777;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 8px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.task-item label {
+    margin: 0 !important;
+}
+
+.avatar-placeholder {
+    width: 90px;
+    height: 90px;
+    border: 2px dashed #999999;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 35px auto 20px;
+}
+
+.phone-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #cccccc;
+    padding-top: 15px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.helper-text {
+    text-align: center;
+    color: #777777;
+    font-size: 12px;
+    margin: 18px 0;
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 15px 8px;
+    }
+
+    .phone {
+        padding: 14px;
+    }
+
+    .nav-btn {
+        font-size: 11px;
+    }
+}
+

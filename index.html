@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow - Mobile App Wireframes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="project-header">
+        <h1>StudyFlow</h1>
+        <p>Student Productivity App · Low-Fidelity Wireframes</p>
+    </header>
+
+    <main class="app-container">
+
+        <nav class="screen-nav">
+            <button class="nav-btn active" data-screen="login">Login</button>
+            <button class="nav-btn" data-screen="home">Home</button>
+            <button class="nav-btn" data-screen="tasks">Tasks</button>
+            <button class="nav-btn" data-screen="profile">Profile</button>
+        </nav>
+
+        <section class="phone">
+
+            <div class="phone-top">
+                <span>9:41</span>
+                <span>● ● ●</span>
+            </div>
+
+            <section class="screen active" id="login">
+                <div class="logo-placeholder">LOGO</div>
+                <h2>Welcome to StudyFlow</h2>
+                <p class="muted">Organize your student life.</p>
+
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="Enter your email">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter your password">
+
+                <button class="primary-btn" data-go="home">Log In</button>
+                <p class="center-text">Don't have an account? Sign up</p>
+            </section>
+
+            <section class="screen" id="home">
+                <p class="muted">MONDAY, OCTOBER 26</p>
+                <h2>Hello, Student!</h2>
+                <p>Here's your daily overview.</p>
+
+                <div class="wire-box">
+                    <h3>Today's Progress</h3>
+                    <div class="progress-track">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p>3 of 5 tasks completed</p>
+                </div>
+
+                <h3>Upcoming Classes</h3>
+                <div class="list-item">
+                    <strong>Data Structures</strong>
+                    <span>09:30 AM</span>
+                </div>
+                <div class="list-item">
+                    <strong>Database Systems</strong>
+                    <span>11:00 AM</span>
+                </div>
+
+                <button class="primary-btn" data-go="tasks">View My Tasks</button>
+            </section>
+
+            <section class="screen" id="tasks">
+                <h2>My Tasks</h2>
+                <p class="muted">Keep track of your assignments.</p>
+
+                <div class="task-item">
+                    <input type="checkbox" id="task1">
+                    <label for="task1">Complete Java assignment</label>
+                </div>
+                <div class="task-item">
+                    <input type="checkbox" id="task2">
+                    <label for="task2">Revise Data Structures</label>
+                </div>
+                <div class="task-item">
+                    <input type="checkbox" id="task3">
+                    <label for="task3">Prepare project report</label>
+                </div>
+
+                <label for="new-task">Add a new task</label>
+                <input id="new-task" type="text" placeholder="Enter a task">
+                <button class="primary-btn" id="add-task">+ Add Task</button>
+                <button class="secondary-btn" data-go="home">Back to Home</button>
+            </section>
+
+            <section class="screen" id="profile">
+                <div class="avatar-placeholder">USER</div>
+                <h2 class="center-text">Student Profile</h2>
+
+                <div class="wire-box">
+                    <p><strong>Name:</strong> Student Name</p>
+                    <p><strong>Course:</strong> Computer Science</p>
+                    <p><strong>Year:</strong> Second Year</p>
+                </div>
+
+                <h3>Preferences</h3>
+                <div class="list-item">
+                    <span>Daily Reminders</span>
+                    <span>ON</span>
+                </div>
+                <div class="list-item">
+                    <span>Dark Mode</span>
+                    <span>OFF</span>
+                </div>
+
+                <button class="secondary-btn" data-go="login">Log Out</button>
+            </section>
+
+            <footer class="phone-footer">
+                <span>Home</span>
+                <span>Tasks</span>
+                <span>Profile</span>
+            </footer>
+
+        </section>
+
+        <p class="helper-text">
+            Select the buttons above to explore each mobile screen.
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
